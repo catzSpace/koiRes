@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+#get{
+    font-size: 1em;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px;
+    color: white;
+    background-color: rgb(224, 64, 64);
+    box-shadow: 2px 2px 10px rgb(81, 29, 29);
+}
+
+#cont_header{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#cont_header a{
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    margin: 15px 10px 10px 0px;
+}
+
+header #rest_koi{
+    display: flex;
+    color: white;
+    background-color:  rgb(224, 64, 64);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+header{
+    margin: 15px;
+}
+
+#banner{
+    display: flex;
+    background-image: url(r/s2.jpg);
+    background-position: center center;
+    background-size: cover;
+    font-size: 30px;
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    animation: bgChange 13s alternate linear infinite;
+}
+
+@keyframes bgChange{
+    0%{
+        background-image: url(r/s2.jpg);
+    }
+
+    20%{
+        background-image: url(r/s3.jpg);
+    }
+
+    40%{
+        background-image: url(r/s4.jpg);
+    }
+
+    60%{
+        background-image: url(r/s5.jpg);
+    }
+
+    80%{
+        background-image: url(r/s2.jpg);
+    }
+
+    100%{
+        background-image: url(r/s3.jpg);
+    }
+}
+
+
+
+section .container{
+    text-align: center;
+    padding: 100px 12px;
+    justify-content: center;
+    
+}
+
+.color_t3{
+    color: rgb(224, 64, 64);
+}
+
+#banner h1{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section .cont_comidas{
+    color: white;
+    background-color: rgb(32, 30, 45);
+    padding: 120px 12px;
+    text-align: center;
+}
+
+#comidas h2{
+    margin-top: 0px;
+    color:  rgb(255, 255, 255);
+}
+
+.cont_comidas input{
+    background-color:  rgb(224, 64, 64);
+    color: white;
+    border: 1px;
+    box-shadow: 2px 2px 10px rgb(81, 29, 29);
+    
+}
+
+.cont_comidas #sushi{
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url(r/sushi.jpg) ;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-position: center;
+    padding: 50px;
+    margin: 18px;
+    border-radius: 20px;
+}
+
+.cont_comidas #soup{
+    background-image:   linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url(r/soup_koi.jpg);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-position: center;
+    padding: 50px;
+    margin: 18px;
+    border-radius: 20px;
+}
+
+
+.cont_comidas #oni{
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url(r/onigiri.jpg);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-position: center;
+    padding: 50px;
+    margin: 18px;
+    border-radius: 20px;
+}
+
+.form p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_form{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    background-image: url(r/a.jpg);
+    background-position: center;
+}
+
+.box_form a{
+    color: rgb(217, 152, 255);
+    
+}
+.box_form p{
+    color: white;
+}
+
+.box_form #name{
+    border: 0;
+    height: 40px;
+    width: 260px;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+#name::-webkit-input-placeholder{
+    padding-left: 10px;
+}
+
+.copy{
+    display: flex;
+    justify-content: right;
+    margin: 50px 20px 10px 20px;
+}
+
+.titulo {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: -40px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 720px){
+
+    .box_menu{
+        display: flex;
+        justify-content: center;
+    }
+
+    .box_menu p{
+        display: block;
+        height: 300px;
+        padding-bottom: 20px;
+    }
+
+    .box_menu .card{
+        padding: 5px;
+        margin-top: 0;
+    }
+
+    .box_menu div {
+        width: 800px;
+        
+    }
+
+    .cont_comidas h2{
+        font-size: 50px;
+    }
+
+    .box_form{
+        width: 800px;
+        
+    }
+
+    .box_form #name{
+        border: 0;
+        height: 40px;
+        width: 720px;
+        border-radius: 5px;
+        margin: 10px;
+        
+    }
+    
+}
